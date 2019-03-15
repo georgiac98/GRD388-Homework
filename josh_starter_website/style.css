@@ -1,31 +1,156 @@
+body{
+    background-color: #3f3948;
+    font-size: 16px;
+    font-family: arial, sans-seri;
+}
+
+.navbar{
+    font-size: 0.975em;
+    margin-bottom: 0px;
+}
+
+a{
+    color: #fff;
+}
+
+a:hover{
+    color: #ed7d1e;
+}
+
+.navbar-nav li a:hover{
+    background-color: transparent;
+}
+
+.navbar-brand{
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: -3px;
+}
+
+.orange{
+    color: darkorange;
+    font-weight: lighter;
+}
+
+.navbar-toggle .iconbar{
+    background-color: #fff;
+}
+
 .herobg{
-    background-color: darkgreen;
-    height:700px;
+    height: 700px;
+    background: url("images/hero.jpg") no-repeat center center;
+    background-size: cover;
+    max-width: 1412px;
+}
+
+.herobg h1{
+    font-family: 'Raleway', sans-serif;
+    float: right;
+    color: #fff;
+    width: 341px;
+    font-size: 7.125em;
+    letter-spacing: -10px;
+    font-weight: 800;
+    line-height: 75%;
+    text-align: right;
+    margin-top: 140px;
 }
 
 .maincontainer{
-    background-color: darkmagenta;
+    background-color: #fff;
 }
 
-.maintext{
-    background-color: #78f6eb;
-    height: 650px;
+.excerpts img{
+    display:block;
+    float:right;
+    margin-right:10px;
+    margin-left:10px;
+    margin-top:30px;
 }
 
-.sidebar{
-    background-color: #4ddb19;
-    height: 650px;
+.excerpts a{
+color:#889098; 
+}
+
+.maintext h2{
+    color:darkorange;
+    font-family: raleway,sans-serif;
+    font-size.1.5em;
+}
+
+.maintext h3{
+    font-family: raleway,sans-serif;
+    font-weight:800;
+}
+
+.aside_elements {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.aside_elements h2{
+color: darkorange;
+font-family: raleway,sans-serif;
+font-size: 1.6em;
 }
 
 .footerbg{
-    background-color: #bb96f7;
     height: 150px;
+    background: url("images/footer.jpg") no-repeat center center;
+    background-size: cover;
+    max-width: 1412px;
 }
 
-.sleftfoot{
-    background-color: #47e736;
+.footerbg p{
+    color: #fff;
+    margin: 10px;
 }
 
-.rightfoot{
-    background-color: #624f96;
+.leftfoot img{
+    margin: 10px;
 }
+
+.rightfoot p{
+    text-align: right;
+}
+
+.rightfoot img{
+float:right;
+    margin:10px;
+ }
+
+@media only screen and (max-width: 992px) {
+    .leftfoot{
+        width:50%;   /* at 992px make the width of leftfoot 50% of the screen size- Bootstrap  
+                          would normally make this div 100%*/
+        padding-left:0px;/* remove any Bootstrap padding that mess with our media query*/
+        padding-right:0px;/* remove any Bootstrap padding that mess with our media 
+                                        query*/
+        float:left;/* make sure the leftfoot div stays on the left*/
+    }
+    
+    .rightfoot{
+        width:50%;  /* at 992px make the width of leftfoot 50% of the screen size- Bootstrap would normally make this div 100%*/*/
+        padding-left:0px;
+        padding-right:0px;
+        float:right;/* make sure the leftfoot div stays on the right*/
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .herobg{
+        height:500px; /* reduce the height and therefore the overall size of the background image*/
+    }
+    
+    .herobg h1{
+        float:none; /* remove the float:right so that the text sits in the middle of the screen*/
+        width: 221px; /* reduce the width of bix the text sits in- this will wrtap our text like the design comp*/
+        font-size: 5.125em; /* reduce the font size*/
+        letter-spacing: -10px;
+        margin-top: 220px; /* push the h1 down away from the top*/
+        line-height: 80%;
+        letter-spacing: -9px;
+    }
+}
+
+
